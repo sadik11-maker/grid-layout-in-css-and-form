@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Grid vs Flexbox</h1>
+    <ul>
+        <li>1.Grid: Two-dimensional layout
+Use when you need to control both rows and columns.
+
+Grid is ideal for complex layouts like dashboards, galleries, or full-page designs.
+
+You define a grid container with rows and columns, then place items using grid lines.
+</li>
+        <li><b>.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+}</b>
+</li>
+        <li>2. Flexbox: One-dimensional layout
+Use when you need to align items in a row OR a column, but not both at once.
+
+Flexbox is perfect for smaller components like nav bars, cards, toolbars, etc.
+
+It aligns items dynamically based on the container’s main axis.</li>
+        <li><b>.container {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: space-between;
+}</b>
+</li>
+        <li></li>
+    </ul>
+</body>
+</html>
